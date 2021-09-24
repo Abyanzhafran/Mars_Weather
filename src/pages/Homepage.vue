@@ -31,13 +31,9 @@
             </template>
           </q-input>
         </div> -->
-        <div class="w-full flex flex-wrap items-end justify-center gap-4 my-8 mx-4">
-          <q-card
-            v-for="n in 3"
-            :key="n"
-            class="my-card text-white bg-gray-900 bg-opacity-60 backdrop-filter backdrop-blur-sm w-40"
-          >
-            <q-card-section>
+        <div class="w-full flex flex-col items-center justify-center gap-20 my-8 mx-4">
+          <q-card class="rounded-card flex items-center justify-center text-white bg-gray-900 bg-opacity-60 backdrop-filter backdrop-blur-sm w-48 h-48 rounded-full">
+            <div>
               <div class="text-h6">
                 Sol 679
               </div>
@@ -54,13 +50,39 @@
                 <div>High: 11.2° F</div>
                 <div>Low: -142° F</div>
               </div>
-            </q-card-section>
-
-            <!-- <q-card-section>
-              <span>High: 11.2° F</span>
-              <span>Low: -142° F</span>
-            </q-card-section> -->
+              <div />
+            </div>
           </q-card>
+          <div class="w-full object-contain">
+            <q-scroll-area style="height:160px; width: 100%;">
+              <div class="flex flex-nowrap justify-center gap-4">
+                <q-card
+                  v-for="n in 3"
+                  :key="n"
+                  class="my-card text-white bg-gray-900 bg-opacity-60 backdrop-filter backdrop-blur-sm w-40"
+                >
+                  <q-card-section>
+                    <div class="text-h6">
+                      Sol 679
+                    </div>
+                    <div class="text-subtitle2">
+                      Oct. 23
+                    </div>
+
+                    <q-separator
+                      class="mt-1 mb-3"
+                      color="white"
+                    />
+
+                    <div>
+                      <div>High: 11.2° F</div>
+                      <div>Low: -142° F</div>
+                    </div>
+                  </q-card-section>
+                </q-card>
+              </div>
+            </q-scroll-area>
+          </div>
         </div>
       </header>
     </div>
@@ -86,5 +108,11 @@ export default defineComponent({
 <style lang="scss">
   .my-card {
     max-width: 250px;
+    min-width: 180px;
+  }
+
+  .rounded-card {
+    max-width: 300px;
+    max-height: 300px;
   }
 </style>

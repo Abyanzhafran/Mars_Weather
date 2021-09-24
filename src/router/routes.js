@@ -10,7 +10,8 @@ const routes = [
     path: '/',
     component: () => import('layouts/Main.vue'),
     children: [
-      { path: '', component: () => import('pages/Homepage.vue') },
+      { path: '/home', component: () => import('pages/Homepage.vue') },
+      { path: '/', component: () => import('pages/Splash.vue') },
     ],
   },
 
