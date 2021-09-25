@@ -15,7 +15,7 @@
         <div class="w-full flex items-center justify-center relative mx-4">
           <q-card class="flex items-center justify-center text-white bg-gray-900 bg-opacity-60 backdrop-filter backdrop-blur-sm w-full h-full">
             <div class="p-6 flex flex-col gap-4">
-              <span class="text-6xl font-bold text-white">Latest Weather at Elysium Planitia</span>
+              <span class="text-3xl xs:text-6xl font-bold text-white">Latest Weather at Elysium Planitia</span>
 
               <q-separator color="white" />
 
@@ -24,7 +24,7 @@
               <div>
                 <q-btn
                   to="/home"
-                  class="text-white hover:bg-white w-20"
+                  class="text-white hover:bg-white w-20 mt-0 sm:mt-8"
                   outline
                   label="Go"
                 />

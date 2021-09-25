@@ -32,19 +32,23 @@
           </q-input>
         </div> -->
         <div class="w-full flex flex-col items-center justify-center gap-20 my-8 mx-4">
-          <q-card class="rounded-card flex items-center justify-center text-white bg-gray-900 bg-opacity-60 backdrop-filter backdrop-blur-sm w-48 h-48 rounded-full">
-            <div>
-              <div class="text-h6">
+          <q-card class="rounded-card flex items-center justify-center text-white bg-gray-900 bg-opacity-60 backdrop-filter backdrop-blur-sm w-72 h-72 rounded-full">
+            <div class="text-center">
+              <div class="text-5xl font-semibold">
                 Sol 679
               </div>
-              <div class="text-subtitle2">
-                Oct. 23
+              <div class="text-xl">
+                Sept. 25
               </div>
 
-              <q-separator
-                class="mt-1 mb-3"
+              <!-- <q-separator
+                class="mt-2 mb-3"
                 color="white"
-              />
+              /> -->
+
+              <div class="mt-5 mb-1">
+                <span class="text-white text-xl font-bold">Temperature</span>
+              </div>
 
               <div>
                 <div>High: 11.2° F</div>
@@ -112,7 +116,7 @@ export default defineComponent({
   }
 
   .rounded-card {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 600px;
+    max-height: 600px;
   }
 </style>

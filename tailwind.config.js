@@ -1,3 +1,4 @@
+/* eslint-disable quote-props */
 const colors = require('tailwindcss/colors');
 
 module.exports = {
@@ -8,6 +9,9 @@ module.exports = {
     colors: {
       orange: colors.orange,
       gray: colors.gray,
+    },
+    screens: {
+      'xs': '368px',
     },
   },
   variants: {
