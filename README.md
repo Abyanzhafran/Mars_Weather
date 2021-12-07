@@ -1,6 +1,6 @@
 # Weather App (mars_weather)
 
-Fucking cool project :)
+Frontend desing for Mars Weather
 
 ## Install the dependencies
 ```bash
